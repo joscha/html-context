@@ -33,6 +33,10 @@ The context can either be `document` or an `HTMLElement`.
 ```console
 npm install html-context --save
 ```
+or in the browser (UMD):
+```html
+<script src="html-context/dist/index.js"></script>
+```
 
 ## Options
 `options.maxLength`: the maximum length of the returned context. The package will try and fit the outermost tag in if it can. Defaults to no maximum length.
