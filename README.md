@@ -36,5 +36,7 @@ npm install html-context --save
 
 ## Options
 `options.maxLength`: the maximum length of the returned context. The package will try and fit the outermost tag in if it can. Defaults to no maximum length.
+
 `options.beautify`: Beautifies the returned context snippet. Defaults to `false`.
+
 `options.placeholder`: The placeholder to use for capped markup. Defaults to `…`.
