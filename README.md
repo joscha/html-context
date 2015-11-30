@@ -4,7 +4,7 @@
 [![npm](https://img.shields.io/npm/l/html-context.svg)](https://opensource.org/licenses/MIT)
 [![David](https://img.shields.io/david/joscha/html-context.svg)](https://david-dm.org/joscha/html-context)
 ![node](https://img.shields.io/node/v/html-context.svg)
-[![coveralls](https://img.shields.io/coveralls/jekyll/jekyll/master.svg)](https://coveralls.io/github/joscha/html-context)
+[![coveralls](https://img.shields.io/coveralls/joscha/html-context/master.svg)](https://coveralls.io/github/joscha/html-context)
 
 This package allows you to generate some HTML context for a given DOM node. E.g.
 Some markup looking like this:
