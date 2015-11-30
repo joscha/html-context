@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+- '4.2'
+- stable
+script:
+- npm run lint
+- npm run coveralls
+- npm link && npm link html-context
+- travis_retry node examples/tonic.js
