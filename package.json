@@ -10,7 +10,7 @@
   },
   "files": [
     "src",
-    "dist",
+    "dist/index.js",
     "examples/tonic.js"
   ],
   "scripts": {
