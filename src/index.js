@@ -48,6 +48,11 @@ module.exports = (e, opts) => {
     element = e.documentElement;
   }
 
+  if (!element.outerHTML) {
+    // SVG elements for example
+    return null;
+  }
+
   const outer = options.beautify ? beautify(element.outerHTML) : element.outerHTML;
   const outerLength = outer.length;
   const fitsComplete = options.maxLength - outerLength >= 0;
@@ -60,7 +65,7 @@ module.exports = (e, opts) => {
 
     let leftBoundary = 0;
     let rightBoundary = 0;
-    if (outerTagWithoutInner.length <= options.maxLength) {
+    if (outerTagWithoutInner.length <= options.maxLength && outer.indexOf(inner) !== -1) {
       // can we fit the whole outermost tag in whole? If yes, then let's do so...
       const outerPieces = outer.split(inner);
       leftBoundary = outerPieces.shift().length;
