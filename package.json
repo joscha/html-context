@@ -49,6 +49,7 @@
     "node": ">=4.2"
   },
   "dependencies": {
+    "define-error": "^1.1.0",
     "js-beautify": "^1.5.10",
     "object-assign": "^4.0.1"
   },
