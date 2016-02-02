@@ -43,7 +43,7 @@
     "jsdom": "^8.0.2",
     "mocha": "^2.3.4",
     "mocha-lcov-reporter": "^1.0.0",
-    "webpack": "^1.12.9"
+    "webpack": "^1.12.10"
   },
   "engines": {
     "node": ">=4.2"
