@@ -32,7 +32,10 @@ const DEFAULT_OPTIONS = {
 * @return {boolean} Whether this is a valid element to provide context for
 */
 function isValidElement(element) {
-  return element && (element.documentElement /* document */ || element.ownerDocument /* any other element */);
+  return element && (
+    element.documentElement /* document */ ||
+    element.ownerDocument /* any other element */
+  );
 }
 
 module.exports = (e, opts) => {
@@ -41,7 +44,7 @@ module.exports = (e, opts) => {
   }
 
   const options = objectAssign({}, DEFAULT_OPTIONS, opts || {});
-  options.placeholder = '' + options.placeholder;
+  options.placeholder = `${options.placeholder}`;
 
   let element = e;
   const window = getWindowForElement(e);
@@ -77,7 +80,8 @@ module.exports = (e, opts) => {
     // we need X chars for the placeholder
     remainingChars -= options.placeholder.length;
 
-    const remainingCharsLeft = Math.ceil(remainingChars / 2); // in case of uneven split, favor beginning with 1 character
+    // in case of uneven split, favor beginning with 1 character
+    const remainingCharsLeft = Math.ceil(remainingChars / 2);
     const remainingCharsRight = remainingChars - remainingCharsLeft;
     leftBoundary += remainingCharsLeft;
     rightBoundary -= remainingCharsRight;
