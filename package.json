@@ -1,6 +1,5 @@
 {
   "name": "html-context",
-  "version": "1.0.6",
   "description": "Gives (textual) context for a given DOM node",
   "main": "src/index.js",
   "directories": {
@@ -19,11 +18,12 @@
     "lint": "eslint .",
     "tdd": "mocha --watch --reporter min",
     "prepublish": "webpack --progress --colors",
-    "test": "mocha"
+    "test": "mocha",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/joscha/html-context.git"
+    "url": "https://github.com/joscha/html-context.git"
   },
   "keywords": [
     "html",
@@ -46,7 +46,8 @@
     "jsdom": "^9.2.0",
     "mocha": "^2.5.3",
     "mocha-lcov-reporter": "^1.2.0",
-    "webpack": "^1.13.1"
+    "webpack": "^1.13.1",
+    "semantic-release": "^4.3.5"
   },
   "engines": {
     "node": ">=4.2"

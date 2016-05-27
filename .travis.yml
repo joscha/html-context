@@ -1,9 +1,22 @@
+sudo: false
 language: node_js
+cache:
+  directories:
+    - node_modules
+notifications:
+  email: false
 node_js:
-- '4.2'
-- stable
+  - '4'
+  - stable
+before_script:
+  - npm prune
 script:
-- npm run lint
-- npm run coveralls
-- npm link && npm link html-context
-- travis_retry node examples/tonic.js
+  - npm run lint
+  - npm run coveralls
+  - npm link && npm link html-context
+  - travis_retry node examples/tonic.js
+after_success:
+  - npm run semantic-release
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/
