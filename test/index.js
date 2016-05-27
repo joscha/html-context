@@ -20,7 +20,8 @@ describe('html-context', () => {
       `,
       (err, w) => {
         if (err) {
-          return done(err);
+          done(err);
+          return;
         }
         window = w;
         document = w.document;

@@ -40,7 +40,7 @@ function isValidElement(element) {
 
 module.exports = (e, opts) => {
   if (!isValidElement(e)) {
-    throw new errors.InvalidDOMElementError(`Element is not a valid DOM element`, e);
+    throw new errors.InvalidDOMElementError('Element is not a valid DOM element', e);
   }
 
   const options = objectAssign({}, DEFAULT_OPTIONS, opts || {});
