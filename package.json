@@ -41,7 +41,7 @@
     "eslint-config-airbnb": "^4.0.0",
     "istanbul": "^0.4.1",
     "jsdom": "^9.2.0",
-    "mocha": "^2.3.4",
+    "mocha": "^2.5.0",
     "mocha-lcov-reporter": "^1.0.0",
     "webpack": "^1.12.10"
   },
