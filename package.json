@@ -46,7 +46,7 @@
     "jsdom": "^9.2.1",
     "mocha": "^2.5.3",
     "mocha-lcov-reporter": "^1.2.0",
-    "webpack": "^1.13.1",
+    "webpack": "^1.13.3",
     "semantic-release": "^4.3.5"
   },
   "engines": {
