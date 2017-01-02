@@ -54,7 +54,7 @@
   },
   "dependencies": {
     "define-error": "^1.1.0",
-    "js-beautify": "^1.6.3",
+    "js-beautify": "^1.6.8",
     "object-assign": "^4.1.0"
   },
   "tonicExampleFilename": "examples/tonic.js"
