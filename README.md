@@ -1,4 +1,6 @@
 # HTML Context
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/joscha/html-context.svg)](https://greenkeeper.io/)
 [![Build status](https://img.shields.io/travis/joscha/html-context/master.svg)](https://travis-ci.org/joscha/html-context)
 [![npm](https://img.shields.io/npm/v/html-context.svg)](https://www.npmjs.com/package/html-context)
 [![npm](https://img.shields.io/npm/l/html-context.svg)](https://opensource.org/licenses/MIT)
